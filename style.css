@@ -1,0 +1,526 @@
+/* URL DE FONTES UTILIZADAS */
+
+@import url('https://fonts.cdnfonts.com/css/mishaland');
+
+
+/* ZERANDO MARGENS E PADINGS DO PROJETO */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ESTILIZANDO ESTRUTURA HTML */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ESTILZANDO BODY DO PROJETO */
+
+body{
+    background-color: #ffffff;
+}
+
+
+/* ESTILIZANDO IMAGENS, IFRAMES, OBJECTS, EMBEDS E VÍDEOS DENTRO DO PROJETO */
+
+img, iframe, object, embed, video{
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* CLASSE PARA ESTILIZAÇÃO DE CONTAINERS */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+/* ESTILIZANDO HEADER */
+
+header{
+    position:fixed;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    background-color:#181717;
+    z-index: 9;
+}
+
+.logo{
+    padding: 10px;
+    text-align:center;
+    font-size: 3rem;
+    font-family: 'Mishaland', sans-serif;
+    font-weight: 100;
+    color:#ffffff;
+}
+
+#burguer{
+    text-align: end;
+    display: block;
+    color: #f1f0f0;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#111114;
+}
+
+#burguer:hover{
+    background-color:#385172;
+}
+
+nav{
+    justify-content: end;
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav a{
+    align-items: end;
+    display: block;
+    text-align: end;
+    padding: 10px;
+    font-family: Calibri;
+    font-size: 1.2rem;
+    color: #f1f0f0;
+    text-decoration: none;
+    background-color:#be000a;
+    border-top: 1px solid #23354D;
+}
+
+nav a:hover{
+    color:#ffe252;
+    font-weight:bold;
+}
+
+
+/* ESTILIZANDO O BANNER DA PÁGINA INICIAL */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    margin-top: 160px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 3px;
+    background-color: #212129;
+}
+
+.txt1-banner{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: Bebas Neue;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.txt2-banner{
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color:#ffffff;
+    font-family: Bebas Neue;
+    font-weight: 100;
+}
+
+.txt2-banner {
+    overflow: hidden;
+}
+ 
+.txt2-banner {
+    margin: 0 auto;
+    border-right: 3px solid #ffffff; /* Linha vertical simulando o cursor de digitação */
+    white-space: nowrap; /* Impede a quebra de linha */
+    overflow: hidden; /* Oculta o texto que ainda não foi digitado */
+    animation: typing 2.5s steps(120, end); /* Nome da animação, duração, efeito de passos */
+}
+
+@keyframes typing {
+    from {
+      width: 0px; /* Começa com largura zero (texto oculto) */
+    }
+    to {
+      width: 224px; /* Termina com a largura total (texto completamente digitado) */
+    }
+}
+
+.btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 140px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #ff000d;
+}
+
+.btn a:hover{
+    background-color:#be000a;
+    box-shadow: #000000 0.6px 0.6px 1px;
+}
+
+/* CLASSES PARA ESTILO DA ABA "SOBRE" */
+
+.sobre{
+    width: 100%;
+    padding: 10px;
+    padding-top: 160px;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#212129;
+}
+
+.txt-tittle-sobre{
+    text-align: center;
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.txt-box-sobre{
+    width: 80%;
+    color: white;
+    text-align: justify;
+    font-family: Calibri Light;
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-bottom: 14px;
+}
+
+.img-sobre{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+
+/* CLASSES PARA ESTILOS DA ABA "EXPERIÊNCIAS" */
+
+.exp{
+    margin:  0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+    padding-top: 160px;
+    background-color: #212129;
+}
+
+.exp-group{
+    text-align: center;
+    width: 86%;
+    color: white;
+    font-family: Calibri;
+    margin-bottom: 30px;
+}
+
+.txt-tittle-exp{
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.sub-tittle-exp{
+    font-size: 1.6rem;
+    font-weight:800;
+    letter-spacing: 1px;
+}
+
+.date-exp{
+    margin-top: 6px;
+    font-size: 1.1rem;
+}
+
+.empresa-exp{
+    color: #ffe252;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.txt-exp{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+/* CLASSES PARA ESTILO DA ABA "PROJETOS" */
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    padding-top: 130px;
+    margin: 0 auto;
+    background-color:#212129;
+}
+
+.tittle-projetos{
+    text-align: center;
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.group-post{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post{
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+/* ESTILOS PARA EFEITO CAIXA OCULTA SOB OS POSTS DE PROJETO */
+
+.caixa{
+    position:relative;
+    display:block;
+}
+
+.sobreposicao{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color:#000000;
+    }
+
+.caixa:hover .sobreposicao {
+    opacity: 85%;
+    transition: 0.4s;
+}
+
+/* ESTILO DO TEXTO OCULTO */
+.texto {
+    font-family: Bebas Neue;
+    color: white;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.group-post h3{
+    font-family: Bebas Neue;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.group-post a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.desc{
+    font-family: Calibri;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* CLASSES PARA ESTILO DA ABA "LINKS" */
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 160px;
+    background-color: #212129;
+}
+
+.tittle-links{
+    text-align: center;
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.link-box{
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color:#385172;
+}
+
+.link-box a{
+    font-family: calibri;
+    font-size: 1.8rem;
+    color:#ffffff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.link-box:hover{
+    background-color: #23354D;
+    box-shadow: 0.5px 1.5px 0.5px #181818;
+}
+
+/* CLASSES PARA ESTILO DA ABA "CONTATO" */
+
+.contato{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 110px;
+    background-color: #212129;
+}
+
+.form{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.input-box{
+    margin: 0 auto;
+    display: grid;  
+}
+
+.input-box input{
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 0.4rem;
+    margin-bottom: 20px;
+    border: none;
+    background-color:#e4e4e4;
+}
+
+.input-box label{
+    text-align: center;
+    margin-bottom: 10px;
+    color:#ffffff;
+    font-family: Calibri;
+    font-size: 1.2rem;
+}
+
+.input-box textarea{
+    text-align: center;
+    margin: 0 auto;
+    resize: none;
+    width: 90%;
+    height: 80px;
+    border: none;
+    border-radius: 0.4rem;
+    background-color:#e4e4e4;
+}
+
+strong{
+    font-weight: 100;
+    color: #ff000d;
+}
+
+.tittle-contato{
+    text-align: center;
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ESTILIZANDO BOTAO DE ENVIO DO FORMULARIO */
+
+.button{
+    font-family: Calibri;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    width: 40%;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    background-color:#ffffff;
+}
+
+/* ESTILIZANDO O RODAPÉ */
+
+.footer{
+    color: #ffffff;
+    font-family: calibri light;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align:center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#181717;
+}
+
+
+/* PEQUENAS TELAS E CELULARES */
+
+@media screen and (min-width: 280px) and (max-width: 767px){
+    body{
+        background-color: #ffe252;
+    }
+}

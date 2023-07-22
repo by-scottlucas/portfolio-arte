@@ -63,12 +63,16 @@ header{
     color:#ffffff;
 }
 
+.logo a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
 #burguer{
     display: block;
     color: #f1f0f0;
     padding: 10px;
     cursor: pointer;
-    background-color:#111114;
 }
 
 #burguer:hover{
@@ -119,7 +123,7 @@ nav a:hover{
     padding: 10px;
     width: 100%;
     height: 90vw;
-    margin-top: 160px;
+    margin-top: 110px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 3px;
     background-color: #212129;
@@ -128,7 +132,7 @@ nav a:hover{
 .txt1-banner{
     margin-top: 20px;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 1px;
     font-family: Bebas Neue;
     font-weight: 100;
@@ -137,7 +141,7 @@ nav a:hover{
 
 .txt2-banner{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     color:#ffffff;
     font-family: Bebas Neue;
@@ -158,10 +162,10 @@ nav a:hover{
 
 @keyframes typing {
     from {
-      width: 0px; /* Começa com largura zero (texto oculto) */
+      width: 0%; /* Começa com largura zero (texto oculto) */
     }
     to {
-      width: 224px; /* Termina com a largura total (texto completamente digitado) */
+      width: 34%; /* Termina com a largura total (texto completamente digitado) */
     }
 }
 
@@ -194,7 +198,7 @@ nav a:hover{
 .sobre{
     width: 100%;
     padding: 10px;
-    padding-top: 160px;
+    padding-top: 100px;
     margin: auto;
     display:flex;
     justify-content: center;
@@ -236,7 +240,7 @@ nav a:hover{
     justify-content: center;
     align-items:center;
     padding: 10px;
-    padding-top: 160px;
+    padding-top: 100px;
     background-color: #212129;
 }
 
@@ -289,7 +293,7 @@ nav a:hover{
     align-items: center;
     width: 100%;
     padding: 10px;
-    padding-top: 130px;
+    padding-top: 60px;
     margin: 0 auto;
     background-color:#212129;
 }
@@ -300,7 +304,7 @@ nav a:hover{
     font-family: Calibri;
     font-size: 2.6rem;
     margin-top: 1.8rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.4rem;
 }
 
 .group-post{
@@ -382,7 +386,7 @@ nav a:hover{
     flex-direction: column;
     margin: 0 auto;
     padding: 10px;
-    padding-top: 160px;
+    padding-top: 90px;
     background-color: #212129;
 }
 
@@ -391,13 +395,12 @@ nav a:hover{
     color: #ffffff;
     font-family: Calibri;
     font-size: 2.6rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .link-box{
     width: 90%;
-    height: 60px;
+    height: 76px;
     margin: 0 auto;
     margin-bottom: 10px;
     display: flex;
@@ -432,7 +435,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    padding-top: 110px;
+    padding-top: 10px;
     background-color: #212129;
 }
 
@@ -522,9 +525,215 @@ strong{
     background-color:#181717;
 }
 
+/* CELULARES */
 
-/* PEQUENAS TELAS E CELULARES */
+@media screen and (min-width: 280px){
 
-@media screen and (min-width: 280px) and (max-width: 767px){
+    .txt1-banner{
+        font-size: 3.6rem;
+    }
 
+    .txt2-banner{
+        font-size: 1.1rem;
+    }
+
+    .btn a{
+        font-size: 0.9rem;
+        width: 120px;
+        height: 40px;
+    }
+
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px){
+
+    #burguer{
+        display: none;
+    }
+
+    .logo{
+        padding: 30px;
+    }
+
+    .main-nav{
+        padding: 30px;
+        display: block;
+    }
+
+    li{
+        display: inline-block;
+        border: 0;
+    }
+
+    nav a{
+        border: 0;
+        background-color: transparent;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner{
+        margin-top: 160px;
+        height: 300px;
+    }
+
+}
+
+
+/* Desktops */
+
+@media screen and (min-width: 1024px){
+
+    .header{
+        height: 12.5vh;
+    }
+
+    .banner{
+        margin-top: 130px;
+        width: 96%;
+        height: 430px;
+    }
+
+    .txt1-banner{
+        font-size: 8rem;
+        letter-spacing: 4px;
+    }
+
+    .txt2-banner{
+        font-size: 2.4rem;
+    }
+
+    .btn a{
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: row;
+        width: 96%;
+    }
+
+    .img-sobre{
+        width: 35%;
+    }
+
+    .txt-tittle-sobre{
+        font-size: 2.8rem;
+        text-align: start;
+    }
+
+    .txt-box-sobre{
+        margin-top: 10px;
+        margin-right: 130px;
+        text-align: justify;
+        width: 40%;
+    }
+
+    .exp{
+        width: 96%;
+    }
+
+    .exp-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .txt-tittle-exp{
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+
+    .sub-tittle-exp{
+        font-size: 1.8rem;
+        text-align: start;
+    }
+
+    .date-exp{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        text-align: start;
+    }
+
+    .empresa-exp{
+        margin-top: 20px;
+        font-size: 1.6rem;
+        text-align: start;
+        margin-bottom: 12px;
+    }
+
+    .txt-exp{
+        font-size: 1.3rem;
+    }
+
+    .projetos{
+        width: 96%;
+    }
+
+    .tittle-projetos{
+        font-size: 2.8rem;
+    }
+
+    .group-post{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .post{
+        width: 36%;
+        margin-inline: 10px;
+    }
+
+    .links{
+        width: 96%;
+    }
+
+    .tittle-links{
+        margin-top: 10px;
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .contato{
+        width: 96%;
+    }
+
+    .form{
+        width: 40%;
+    }
+
+    .tittle-contato{
+        margin-top: 20px;
+        font-size: 2.8rem;
+    }
+
+    .input-box label{
+        font-size: 1.3rem;
+    }
+
+    .input-box input{
+        height: 40px;
+    }
+
+    .input-box textarea{
+        height: 110px;
+    }
+
+    .button{
+        margin-top: 30px;
+        width: 180px;
+        height: 36px;
+        margin-bottom: 0%;
+    }
+
+    .footer{
+        margin-top: 0%;
+    }
 }

@@ -528,10 +528,8 @@ strong{
 
 @media screen and (min-width: 280px){
 
-    body{
-        background-color: #be000a;
-    }
     .banner{
+        height: 600px;
         margin-bottom: 100px;
         margin-top: 180px;
 
@@ -549,6 +547,24 @@ strong{
         font-size: 0.9rem;
         width: 120px;
         height: 40px;
+    }
+
+    .exp{
+        margin-top: 160px;
+        height: 600px;
+        margin-bottom: 120px;
+    }
+
+    .links{
+        height: 600px;
+        padding-top: 100px;
+        margin-top: 100px;
+        margin-bottom: 220px;
+    }
+
+    .contato{
+        height: 600px;
+        margin-bottom: 80px;
     }
 
 }

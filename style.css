@@ -98,8 +98,7 @@ nav a{
     font-size: 1.2rem;
     color: #f1f0f0;
     text-decoration: none;
-    background-color:#be000a;
-    border-top: 1px solid #23354D;
+    border-top: 0.1px solid #292929;
 }
 
 nav a:hover{

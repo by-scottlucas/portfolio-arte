@@ -281,6 +281,17 @@
                 itens.style.display = 'block'
             }
         }
+
+        const menuLinks = itens.getElementsByTagName('a');
+        for (const link of menuLinks) {
+            link.addEventListener('click', () => {
+                itens.style.display = 'none';
+            });
+        }
+        
+        
     </script>
+
 </body>
+
 </html>

@@ -115,6 +115,7 @@ nav a:hover{
 /* ESTILIZANDO O BANNER DA PÁGINA INICIAL */
 
 .banner{
+    font-family: 'Bebas Neue', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,8 +135,7 @@ nav a:hover{
     text-align: center;
     font-size: 5rem;
     letter-spacing: 1px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 100;
+    font-weight:bold;
     color: #ffffff;
 }
 
@@ -144,8 +144,7 @@ nav a:hover{
     font-size: 1.5rem;
     letter-spacing: 1px;
     color:#ffffff;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 100;
+    font-weight:800;
 }
 
 .txt2-banner {

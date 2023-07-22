@@ -75,10 +75,6 @@ header{
     cursor: pointer;
 }
 
-#burguer:hover{
-    background-color:#385172;
-}
-
 .sub-nav{
     display: flex;
     justify-content:space-between;
@@ -530,8 +526,6 @@ strong{
 
     .banner{
         height: 600px;
-        margin-bottom: 100px;
-        margin-top: 180px;
 
     }
 

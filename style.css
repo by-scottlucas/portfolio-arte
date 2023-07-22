@@ -524,6 +524,7 @@ strong{
 @media screen and (min-width: 280px){
 
     .banner{
+        margin-top: 100px;
         height: 600px;
 
     }

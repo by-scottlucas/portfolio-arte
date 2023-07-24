@@ -92,13 +92,12 @@ nav ul{
 nav a{
     align-items: end;
     display: block;
-    text-align: end;
+    text-align: center;
     padding: 10px;
     font-family: Calibri;
     font-size: 1.2rem;
     color: #f1f0f0;
     text-decoration: none;
-    border-top: 0.1px solid #292929;
 }
 
 nav a:hover{
@@ -148,7 +147,7 @@ nav a:hover{
  
 .txt2-banner {
     margin: 0 auto;
-    border-right: 3px solid #ffffff; /* Linha vertical simulando o cursor de digitação */
+    border-right: 3px #ffffff; /* Linha vertical simulando o cursor de digitação */
     white-space: nowrap; /* Impede a quebra de linha */
     overflow: hidden; /* Oculta o texto que ainda não foi digitado */
     animation: typing 2.5s steps(120, end); /* Nome da animação, duração, efeito de passos */
@@ -159,7 +158,7 @@ nav a:hover{
       width: 0%; /* Começa com largura zero (texto oculto) */
     }
     to {
-      width: 34%; /* Termina com a largura total (texto completamente digitado) */
+      width: 100%; /* Termina com a largura total (texto completamente digitado) */
     }
 }
 
@@ -233,8 +232,7 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding: 10px;
-    padding-top: 100px;
+    padding-top: 70px;
     background-color: #212129;
 }
 
@@ -286,7 +284,6 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px;
     padding-top: 60px;
     margin: 0 auto;
     background-color:#212129;
@@ -379,8 +376,6 @@ nav a:hover{
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    padding: 10px;
-    padding-top: 90px;
     background-color: #212129;
 }
 
@@ -713,9 +708,7 @@ strong{
     }
 
     .tittle-links{
-        margin-top: 10px;
         font-size: 2.8rem;
-        margin-bottom: 20px;
     }
 
     .contato{
@@ -753,4 +746,12 @@ strong{
     .footer{
         margin-top: 0%;
     }
+}
+
+@media screen and (min-width: 1920px){
+
+    .links{
+        padding-top: 0px;
+    }
+
 }

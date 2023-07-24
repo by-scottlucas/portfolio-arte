@@ -264,33 +264,7 @@
     <footer class="footer">Criado por Lucas Scott | 2023 | Todos os direitos reservados.</footer>
 
 
-    <script>
-
-        function novaDimensao(){
-            if (window.innerWidth >= 768){
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
-        function clickMenu() {
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-
-        const menuLinks = itens.getElementsByTagName('a');
-        for (const link of menuLinks) {
-            link.addEventListener('click', () => {
-                itens.style.display = 'none';
-            });
-        }
-        
-        
-    </script>
+    <script src="index.js"></script>
 
 </body>
 

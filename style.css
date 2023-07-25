@@ -64,6 +64,7 @@ header{
 }
 
 .logo a{
+    padding: 10px;
     text-decoration: none;
     color:#ffffff;
 }
@@ -554,6 +555,20 @@ strong{
 
     .contato{
         height: 600px;
+    }
+
+    .form{
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .input-box textarea{
+        height: 140px;
+    }
+
+    .button{
+        height: 40px;
+        margin-top: 40px;
     }
 
 }

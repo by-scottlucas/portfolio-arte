@@ -12,9 +12,9 @@
 
 <body onresize="novaDimensao()">
 
-    <main class="container">
+    <main class="container"> <!-- ABERTURA DO CONTAINER PRINCIPAL -->
 
-        <header class="header">
+        <header class="header"> <!-- ABERTURA DO HEADER -->
 
             <div class="sub-nav">
 
@@ -37,9 +37,9 @@
                 
             </nav>
             
-        </header>
+        </header> <!-- FECHAMENTO DO HEADER -->
 
-        <div class="banner">
+        <article class="banner"> <!-- ABERTURA BANNER HOME -->
             <h1 class="txt1-banner">Lucas Scott</h1>
 
             <h2 class="txt2-banner">Designer Gráfico e Ilustrador</h2>
@@ -48,11 +48,11 @@
                 <a href="#contato">CONTATE-ME</a>
             </div>
 
-        </div>
+        </article> <!-- FECHAMENTO BANNER HOME -->
 
-        <div class="sobre" id="sobre">
+        <article class="sobre" id="sobre"> <!-- ABERTURA ABA SOBRE -->
             
-            <div class="txt-box-sobre">
+            <section class="txt-box-sobre">
             
                 <h2 class="txt-tittle-sobre">Sobre</h2>
                 
@@ -66,17 +66,15 @@
                     Além dos serviços prestados por meio da Traço Livre, também atuo como freelancer, prestando serviços como Social Media, Designer de Marcas e Designer de Estampas.
                 </p>
 
-            </div>
+            </section>
+            
+            <img src="photo.jpg" alt="Photo" class="img-sobre">
 
-            <div class="img-sobre">
-                <img src="photo.jpg" alt="Photo">
-            </div>
+        </article> <!-- FECHAMENTO ABA SOBRE -->
 
-        </div>
+        <article class="exp" id="exp"> <!-- ABERTURA ABA EXPERIENCIAS -->
 
-        <div class="exp" id="exp">
-
-            <div class="exp-group">
+            <section class="exp-group">
         
                 <h2 class="txt-tittle-exp">Experiências</h2>
 
@@ -90,8 +88,6 @@
                     Atuo com desenvolvimento de Identidade visual, Social media, artes para mídia impressa (Cartões de visita, Folders, Tags, Adesivos, Cartazes, etc.)
                 </p>
 
-                <br><br>
-
                 <p class="sub-tittle-exp">Social Media Designer</p>
 
                 <p class="date-exp">Mar 2021 - Dez 2021 (9 meses)</p>
@@ -102,18 +98,18 @@
                     Trabalhei Social Media Designer na Vila Lelê que é um Loja de roupas infantis, onde desenvolvi artes que era publicadas no instagram da empresa.
                 </p>
 
-            </div>
+            </section>
 
             
-        </div>
+        </article> <!-- FECHAMENTO ABA EXPERIENCIAS -->
             
-        <div class="projetos" id="projetos">
+        <article class="projetos" id="projetos"> <!-- ABERTURA ABA PROJETOS -->
 
-            <h2 class="tittle-projetos">Projetos</h2>
+            <section class="group-post">
 
-            <div class="group-post">
+                <h2 class="tittle-projetos">Projetos</h2>
 
-                <article class="post">
+                <section class="post">
 
                     <div class="caixa">
 
@@ -137,9 +133,9 @@
 
                     </div>
 
-                </article>
+                </section>
 
-                <article class="post">
+                <section class="post">
 
                     <div class="caixa">
 
@@ -163,9 +159,9 @@
 
                     </div>
 
-                </article>
+                </section>
 
-                <article class="post">
+                <section class="post">
 
                     <div class="caixa">
 
@@ -189,63 +185,63 @@
 
                     </div>
 
-                </article>
+                </section>
 
-            </div>
+            </section>
 
-        </div>
+        </article> <!-- FECHAMENTO ABA PROJETOS -->
 
-        <div class="links" id="links">
+        <article class="links" id="links"> <!-- ABERTURA ABA LINKS -->
 
                 <h2 class="tittle-links">Meus Links</h2>
 
-                <div class="link-box">
+                <section class="link-box">
                     <a href="https://www.behance.net/Lucasscottart" target="_blank">Behance</a>
-                </div>
+                </section>
 
-                <div class="link-box">
+                <section class="link-box">
                     <a href="https://www.instagram.com/lucasscott.jpg/" target="_blank">Instagram</a>
-                </div>
+                </section>
 
-                <div class="link-box">
+                <section class="link-box">
                     <a href="https://www.linkedin.com/in/bylucasscott/" target="_blank">Linkedin</a>
-                </div>
+                </section>
 
-                <div class="link-box">
+                <section class="link-box">
                     <a href="https://www.instagram.com/guridocoffee/" target="_blank">Ilustrações</a>
-                </div>
+                </section>
 
-                <div class="link-box">
+                <section class="link-box">
                     <a href="https://www.instagram.com/tracolivredg/" target="_blank">Design</a>
-                </div>
+                </section>
 
-        </div>
+        </article> <!-- FECHAMENTO ABA LINKS -->
 
-        <div class="contato" id="contato">
+        <article class="contato" id="contato"> <!-- ABERTURA ABA CONTATOS -->
 
             <form action="https://formsubmit.co/lucasluke307@gmail.com" method="post" class="form">
 
-                <div class="input-group">
+                <section class="input-group">
 
                     <h2 class="tittle-contato">Contato</h2>
     
-                    <div class="input-box">
+                    <section class="input-box">
                         <label class="titulo-input">Nome <strong>*</strong></label>
     
                         <input type="text" id="nome" placeholder="Ex: Ana Nunes Buran" required>
-                    </div>
+                    </section>
 
-                    <div class="input-box">
+                    <section class="input-box">
                         <label class="titulo-input">Endereço de E-mail <strong>*</strong></label>
     
                         <input type="email" id="email" placeholder="Ex: Ananunes@email.com" required>
-                    </div>
+                    </section>
 
-                    <div class="input-box">
+                    <section class="input-box">
                         <label class="titulo-input">Mensagem <strong>*</strong></label>
     
                         <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem aqui . . ." required></textarea>
-                    </div>
+                    </section>
 
                     <button type="submit" class="button">Enviar</button>
 
@@ -253,18 +249,17 @@
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
 
-                </div>
+                </section>
 
             </form>
 
-        </div>
+        </article> <!-- FECHAMENTO ABA CONTATOS -->
 
-    </main>
+    </main> <!-- FECHAMENTO DO CONTAINER PRINCIPAL -->
 
     <footer class="footer">Criado por Lucas Scott | 2023 | Todos os direitos reservados.</footer>
 
-
-    <script src="index.js"></script>
+    <script src="index.js"></script> <!-- INCLUINDO JAVASCRIPT AO DOCUMENTO -->
 
 </body>
 

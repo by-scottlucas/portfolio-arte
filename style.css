@@ -311,13 +311,13 @@ nav a:hover{
 }
 
 .caixa {
+    position: relative;
     display: grid;
     width: 90%;
     margin-bottom: 20px;
 }
-
-
 .sobreposicao{
+    position:absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -518,71 +518,26 @@ strong{
     background-color:#181717;
 }
 
-/* CELULARES */
-/* 
-@media screen and (min-width: 280px) {
 
-    .banner{
-        padding: 10px;
-        height: 80vmax;
-
-    }
-
-    .txt1-banner{
-        font-size: 5rem;
-    }
-
-    .txt2-banner{
-        font-size: 1.5rem;
-    }
-
-    .btn a{
-        font-size: 0.9rem;
-        width: 120px;
-        height: 40px;
-    }
-
-    .exp{
-        padding-left: 10px;
-        height: 100vh;
-    }
-
-
-    .links{
-        padding-left: 12px;
-        height: 100vh;
-    }
-
-    .contato{
-        height: 600px;
-    }
-
-    .form{
-        margin-top: 60px;
-        width: 100%;
-    }
-
-    .input-box textarea{
-        height: 140px;
-    }
-
-    .button{
-        height: 40px;
-        margin-top: 40px;
-    }
-
-} */
+/* ********* MEDIA QUERIES ********* */
 
 /* Tablets */
-/* 
+ 
 @media screen and (min-width: 768px){
 
-    #burguer{
-        display: none;
+    /* AJUSTES DO CABEÇALHO */
+
+    .header{
+        display: flex;
+        justify-content: space-between;
     }
 
     .logo{
         padding: 30px;
+    }
+
+    #burguer{
+        display: none;
     }
 
     .main-nav{
@@ -597,20 +552,77 @@ strong{
 
     nav a{
         border: 0;
-        background-color: transparent;
     }
 
-    .header{
-        display: flex;
-        justify-content: space-between;
+
+    /* AJUSTES DA SEÇÃO BANNER */
+
+    section.banner{
+        margin-top: 0;
+        width: 100%;
+        height: 100vh;
     }
 
-    .banner{
-        margin-top: 160px;
-        height: 300px;
+    .txt1-banner {
+        font-size: 8rem;
     }
 
-} */
+    .txt2-banner {
+        font-size: 2.5rem;
+    }
+
+    .btn a{
+        font-size: 1.4rem;
+        width: 200px;
+        height: 50px;
+    }
+
+    /* AJUSTES DA SEÇÃO SOBRE */
+
+    .txt-box-sobre{
+        font-size: 1.4rem;
+        line-height: 40px;
+        padding-top: 40px;
+    }
+
+    /* AJUSTES DA SEÇÃO EXPERIENCIAS */
+
+    .exp-group {
+        padding-top: 130px;
+    }
+
+    .sub-tittle-exp{
+        font-size: 2rem;
+    }
+
+    .date-exp {
+        font-size: 1.5rem;
+    }
+
+    .empresa-exp{
+        margin-top: 30px;
+        font-size: 1.6rem;
+    }
+
+    .txt-exp{
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    /* AJUSTES DA SEÇÃO PROJETOS */
+
+    .projetos{
+        padding-top: 110px;
+    }
+
+
+    .caixa{
+        display: grid;
+        width: 40%;
+    }
+
+
+}
 
 /* Desktops */
 /* 

@@ -646,6 +646,12 @@ strong{
 
     /* AJUSTES DA SEÇÃO CONTATO  */
 
+    .form{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+
     .input-box{
         margin: 0 auto;
         width: 80%;

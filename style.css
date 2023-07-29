@@ -291,6 +291,7 @@ nav a:hover{
 }
 
 .tittle-projetos{
+    padding-top: 50px;
     text-align: center;
     color: #ffffff;
     font-family: Calibri;
@@ -302,7 +303,6 @@ nav a:hover{
 /* ESTILOS PARA EFEITO CAIXA OCULTA SOB OS POSTS DE PROJETO */
 
 .posts{
-    padding-top: 45px;
     width: 100%;
     margin: 0 auto;
     display: inline-flex;
@@ -316,6 +316,12 @@ nav a:hover{
     width: 90%;
     margin-bottom: 20px;
 }
+
+.caixa img{
+    width: 100%;
+    height: auto;
+}
+
 .sobreposicao{
     position:absolute;
     top: 0;
@@ -612,14 +618,68 @@ strong{
     /* AJUSTES DA SEÇÃO PROJETOS */
 
     .projetos{
+        display: flex;
+        flex-direction: column;
         padding-top: 110px;
     }
 
+    .tittle-projetos{
+        padding: 0;
+    }
 
     .caixa{
-        display: grid;
-        width: 40%;
+        width: 80%;
     }
+
+    /* AJUSTES DA SEÇÃO DE LINKS */
+
+    .group-links{
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .link-box{
+        margin-bottom: 20px;
+        height: 110px;
+    }
+
+
+    /* AJUSTES DA SEÇÃO CONTATO  */
+
+    .input-box{
+        margin: 0 auto;
+        width: 80%;
+        padding: 0;
+    }
+
+    .tittle-contato{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .input-box label{
+        font-size: 1.5rem;
+    }
+
+    .input-box input{
+        font-size: 1.5rem;
+        height: 50px;
+    }
+
+    .input-box textarea {
+        font-size: 1.5rem;
+        height: 200px;
+
+    }
+
+    .button{
+        width: 30%;
+        height: 50px;
+    }
+
+
+
+
 
 
 }

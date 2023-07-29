@@ -118,15 +118,12 @@ nav a:hover{
     margin: auto;
     padding: 10px;
     width: 100%;
-    height: 100vw;
-    margin-top: 110px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 3px;
+    height: 100vh;
     background-color: #212129;
 }
 
 .txt1-banner{
-    margin-top: 20px;
+    margin-top: 70px;
     text-align: center;
     font-size: 5rem;
     letter-spacing: 1px;
@@ -151,7 +148,7 @@ nav a:hover{
     border-right: 3px #ffffff; /* Linha vertical simulando o cursor de digitação */
     white-space: nowrap; /* Impede a quebra de linha */
     overflow: hidden; /* Oculta o texto que ainda não foi digitado */
-    animation: typing 2.5s steps(120, end); /* Nome da animação, duração, efeito de passos */
+    animation: typing 4.5s steps(360, end); /* Nome da animação, duração, efeito de passos */
 }
 
 @keyframes typing {
@@ -218,6 +215,10 @@ nav a:hover{
     margin-bottom: 14px;
 }
 
+.txt-sobre{
+    margin-bottom: 30px;
+}
+
 .img-sobre{
     width: 80%;
     margin-bottom: 10px;
@@ -227,17 +228,18 @@ nav a:hover{
 /* CLASSES PARA ESTILOS DA ABA "EXPERIÊNCIAS" */
 
 .exp{
+    padding: 10px;
     margin:  0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding-top: 70px;
     background-color: #212129;
 }
 
 .exp-group{
+    padding-top: 80px;
     text-align: center;
     width: 86%;
     color: white;
@@ -252,13 +254,13 @@ nav a:hover{
 }
 
 .sub-tittle-exp{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight:800;
     letter-spacing: 1px;
 }
 
 .date-exp{
-    margin-top: 6px;
+    margin-top: 10px;
     font-size: 1.1rem;
 }
 
@@ -268,25 +270,23 @@ nav a:hover{
     letter-spacing: 1px;
     font-size: 1.4rem;
     margin-top: 20px;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
 }
 
 .txt-exp{
     font-size: 1.2rem;
     text-align: justify;
+    margin-bottom: 40px;
+    line-height: 30px;
 }
 
 
 /* CLASSES PARA ESTILO DA ABA "PROJETOS" */
 
 .projetos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 60px;
+    padding: 10px;
     margin: 0 auto;
+    width: 100%;
     background-color:#212129;
 }
 
@@ -299,29 +299,25 @@ nav a:hover{
     margin-bottom: 1.4rem;
 }
 
-.group-post{
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.post{
-    width: 70%;
-    margin-bottom: 30px;
-}
-
 /* ESTILOS PARA EFEITO CAIXA OCULTA SOB OS POSTS DE PROJETO */
 
-.caixa{
-    position:relative;
-    display:block;
+.posts{
+    padding-top: 45px;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.caixa {
+    display: grid;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+
 .sobreposicao{
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -344,19 +340,17 @@ nav a:hover{
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.group-post h3{
+.projetos h3{
     font-family: Bebas Neue;
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
 }
 
-.group-post a{
+.projetos a{
     color: #ffffff;
     text-decoration: none;
 }
@@ -371,6 +365,7 @@ nav a:hover{
 /* CLASSES PARA ESTILO DA ABA "LINKS" */
 
 .links{
+    padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -378,6 +373,12 @@ nav a:hover{
     flex-direction: column;
     margin: 0 auto;
     background-color: #212129;
+}
+
+.group-links{
+    transform: translateY(16%);
+    width: 100%;
+    height: 100vh;
 }
 
 .tittle-links{
@@ -389,8 +390,8 @@ nav a:hover{
 }
 
 .link-box{
-    width: 90%;
-    height: 76px;
+    width: 96%;
+    height: 78px;
     margin: 0 auto;
     margin-bottom: 10px;
     display: flex;
@@ -420,6 +421,7 @@ nav a:hover{
 .contato{
     margin: 0 auto;
     width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -431,8 +433,17 @@ nav a:hover{
 
 .form{
     text-align: center;
-    width: 80%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.tittle-contato{
+    text-align: center;
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .input-box{
@@ -444,7 +455,7 @@ nav a:hover{
     text-align: center;
     margin: 0 auto;
     width: 90%;
-    height: 40px;
+    height: 45px;
     border-radius: 0.4rem;
     margin-bottom: 20px;
     border: none;
@@ -464,9 +475,10 @@ nav a:hover{
     margin: 0 auto;
     resize: none;
     width: 90%;
-    height: 80px;
+    height: 120px;
     border: none;
     border-radius: 0.4rem;
+    margin-bottom: 20px;
     background-color:#e4e4e4;
 }
 
@@ -475,23 +487,14 @@ strong{
     color: #ff000d;
 }
 
-.tittle-contato{
-    text-align: center;
-    color: #ffffff;
-    font-family: Calibri;
-    font-size: 2.6rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
 /* ESTILIZANDO BOTAO DE ENVIO DO FORMULARIO */
 
 .button{
     font-family: Calibri;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
     width: 40%;
-    height: 30px;
+    height: 40px;
     border: none;
     font-weight: bold;
     border-radius: 0.4rem;
@@ -516,7 +519,7 @@ strong{
 }
 
 /* CELULARES */
-
+/* 
 @media screen and (min-width: 280px) {
 
     .banner{
@@ -544,9 +547,6 @@ strong{
         height: 100vh;
     }
 
-    .projetos{
-        padding-left: 18px;
-    }
 
     .links{
         padding-left: 12px;
@@ -571,10 +571,10 @@ strong{
         margin-top: 40px;
     }
 
-}
+} */
 
 /* Tablets */
-
+/* 
 @media screen and (min-width: 768px){
 
     #burguer{
@@ -610,10 +610,10 @@ strong{
         height: 300px;
     }
 
-}
+} */
 
 /* Desktops */
-
+/* 
 @media screen and (min-width: 1024px){
 
     .header{
@@ -767,4 +767,4 @@ strong{
     .footer{
         margin-top: 0%;
     }
-}
+} */

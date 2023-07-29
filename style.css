@@ -557,9 +557,10 @@ strong{
     }
 
     nav a{
+        padding: 6px;
+        font-size: 1.4rem;
         border: 0;
     }
-
 
     /* AJUSTES DA SEÇÃO BANNER */
 
@@ -585,13 +586,21 @@ strong{
 
     /* AJUSTES DA SEÇÃO SOBRE */
 
+    .txt-tittle-sobre{
+        font-size: 4rem;
+    }
+
     .txt-box-sobre{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 40px;
         padding-top: 40px;
     }
 
     /* AJUSTES DA SEÇÃO EXPERIENCIAS */
+
+    .txt-tittle-exp{
+        font-size: 4rem;
+    }
 
     .exp-group {
         padding-top: 130px;
@@ -624,6 +633,7 @@ strong{
     }
 
     .tittle-projetos{
+        font-size: 4rem;
         padding: 0;
     }
 
@@ -633,8 +643,12 @@ strong{
 
     /* AJUSTES DA SEÇÃO DE LINKS */
 
+    .tittle-links{
+        font-size: 4rem;
+    }
+
     .group-links{
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 10px;
     }
 
@@ -654,22 +668,24 @@ strong{
 
     .input-box{
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         padding: 0;
     }
 
     .tittle-contato{
+        font-size: 4rem;
         width: 100%;
         margin-bottom: 50px;
     }
 
     .input-box label{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .input-box input{
         font-size: 1.5rem;
-        height: 50px;
+        height: 60px;
+        margin-bottom: 50px;
     }
 
     .input-box textarea {
@@ -683,10 +699,9 @@ strong{
         height: 50px;
     }
 
-
-
-
-
+    .footer{
+        font-size: 1.5rem;
+    }
 
 }
 

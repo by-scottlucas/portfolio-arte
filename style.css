@@ -706,20 +706,24 @@ strong{
 }
 
 /* Desktops */
-/* 
+
 @media screen and (min-width: 1024px){
 
     .header{
-        height: 12.5vh;
+        height: 12vh;
     }
 
-    .banner{
-        margin-top: 130px;
-        width: 96%;
-        height: 430px;
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    .nav{
+        font-size: 1.3rem;
+        margin-left: 24px;
     }
 
     .txt1-banner{
+        text-align: center;
         font-size: 8rem;
         letter-spacing: 4px;
     }
@@ -729,21 +733,27 @@ strong{
     }
 
     .btn a{
-        width: 180px;
+        width: 160px;
         height: 40px;
         border-radius: 10px;
         font-size: 1.2rem;
     }
 
     .sobre{
-        padding-top: 110px;
+        padding: 30px;
+        padding-top: 60px;
         display: flex;
         flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
         width: 96%;
+        height: 100vh;
     }
 
-    .img-sobre{
-        width: 35%;
+    .txt-box-sobre{
+        padding: 0px;
+        text-align: justify;
+        width: 50%;
     }
 
     .txt-tittle-sobre{
@@ -751,19 +761,23 @@ strong{
         text-align: start;
     }
 
-    .txt-box-sobre{
-        margin-top: 10px;
-        margin-right: 130px;
-        text-align: justify;
+    .txt-sobre{
+        font-size: 1.3rem;
+        margin-bottom: 4px;
+    }
+
+    .img-sobre{
         width: 40%;
     }
 
     .exp{
-        padding-top: 56px;
+        padding: 30px;
         width: 96%;
     }
 
     .exp-group{
+        padding-top: 90px;
+        width: 100%;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -775,51 +789,62 @@ strong{
     }
 
     .sub-tittle-exp{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .date-exp{
         margin-top: 10px;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .empresa-exp{
-        margin-top: 20px;
-        font-size: 1.6rem;
+        margin-top: 30px;
+        font-size: 1.8rem;
         margin-bottom: 12px;
     }
 
     .txt-exp{
-        width: 70%;
-        font-size: 1.2rem;
+        margin: 0 auto;
+        width: 84%;
+        font-size: 1.4rem;
+        margin-bottom: 30px;
     }
 
     .projetos{
-        padding-top: 66px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
         width: 96%;
+        height: 100vh;
     }
 
     .tittle-projetos{
         font-size: 2.8rem;
     }
 
-    .group-post{
+    .posts{
         display: flex;
         flex-direction: row;
     }
 
-    .post{
+    .caixa{
         width: 36%;
         margin-inline: 10px;
     }
 
     .links{
-        padding-top: 50px;
+        padding-top: 0px;
+        padding: 35px;
         width: 96%;
+    }
+
+    .group-links{
+        width: 100%;
     }
 
     .tittle-links{
         font-size: 2.8rem;
+        margin-bottom: 30px;
     }
 
     .contato{
@@ -860,4 +885,4 @@ strong{
     .footer{
         margin-top: 0%;
     }
-} */
+}

@@ -741,13 +741,12 @@ strong{
 
     .sobre{
         padding: 30px;
-        padding-top: 60px;
+        padding-top: 100px;
         display: flex;
         flex-direction: row;
         justify-content:space-around;
         align-items: center;
         width: 96%;
-        height: 100vh;
     }
 
     .txt-box-sobre{
@@ -762,12 +761,12 @@ strong{
     }
 
     .txt-sobre{
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         margin-bottom: 4px;
     }
 
     .img-sobre{
-        width: 40%;
+        width: 35%;
     }
 
     .exp{
@@ -776,8 +775,8 @@ strong{
     }
 
     .exp-group{
-        padding-top: 90px;
-        width: 100%;
+        padding-top: 60px;
+        width: 90%;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -813,9 +812,8 @@ strong{
     .projetos{
         display: flex;
         flex-direction: column;
-        padding-top: 150px;
+        padding-top: 60px;
         width: 96%;
-        height: 100vh;
     }
 
     .tittle-projetos{
@@ -833,34 +831,44 @@ strong{
     }
 
     .links{
-        padding-top: 0px;
-        padding: 35px;
+        margin-top: 0;
+        padding-top: 0;
+        padding: 0;
         width: 96%;
+        height: 90vh;
     }
 
     .group-links{
-        width: 100%;
+        padding-top: 0;
+        margin-top: 0;
+        width: 80%;
     }
 
     .tittle-links{
+        margin-top: 0;
         font-size: 2.8rem;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .link-box{
+        margin-top: 0;
+        margin-bottom: 10px;
+        height: 78px;
     }
 
     .contato{
         margin-bottom: 0;
-        padding-top: 40px;
+        padding-top: 10px;
         width: 96%;
     }
 
     .form{
-        margin-bottom: 0;
-        width: 40%;
+        width: 60%;
     }
 
     .tittle-contato{
-        margin-top: 20px;
         font-size: 2.8rem;
+        margin-bottom: 20px;
     }
 
     .input-box label{
@@ -868,21 +876,29 @@ strong{
     }
 
     .input-box input{
+        font-size: 1rem;
+        width: 80%;
         height: 40px;
+        margin-bottom: 30px;
     }
 
     .input-box textarea{
-        height: 140px;
+        font-size: 1.2rem;
+        width: 80%;
+        height: 100px;
+        margin-bottom: 10px;
     }
 
     .button{
-        margin-top: 30px;
         width: 180px;
         height: 36px;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     .footer{
-        margin-top: 0%;
+        margin-top: 10px;
+        width: 100%;
+        height: 1vh;
     }
+
 }

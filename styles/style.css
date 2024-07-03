@@ -371,7 +371,7 @@ nav a:hover{
 /* CLASSES PARA ESTILO DA ABA "LINKS" */
 
 .links{
-    padding: 10px;
+    /* padding: 10px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -383,7 +383,7 @@ nav a:hover{
 
 .group-links{
     transform: translateY(16%);
-    width: 100%;
+    width: 90%;
     height: 100vh;
 }
 

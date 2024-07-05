@@ -1,184 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="icon" href="./assets/icon.jpg">
-        <title>Home | Lucas Scott</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/icon.jpg">
+    <title>Home | Lucas Scott</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
 <body onresize="novaDimensao()">
 
-    <main class="container"> <!-- ABERTURA DO CONTAINER PRINCIPAL -->
+    <main class="container">
 
-        <header class="header"> <!-- ABERTURA DO HEADER -->
+        <!-- SESSÃO HEADER/NAVBAR -->
+        <header class="header">
+            <nav>
+                <div class="nav-brand">
+                    <a href="#" class="logo">Lucas S</a>
+                    <span id="menu-burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                </div>
 
-            <div class="sub-nav">
+                <div class="navbar" id="itens">
 
-                <h1 class="logo"><a href="#">Lucas S</a></h1>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="nav" target="_parent">Home</a>
+                        </li>
 
-                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-                
-            </div>
+                        <li>
+                            <a href="#sobre" class="nav" target="_parent">Sobre</a>
+                        </li>
 
-            <nav class="main-nav" id="itens">
+                        <li>
+                            <a href="#exp" class="nav" target="_parent">Experiências</a>
+                        </li>
 
-                <ul class="nav-list">
-                    <li><a href="#" class="nav" target="_parent">Home</a></li>
-                    <li><a href="#sobre" class="nav" target="_parent">Sobre</a></li>
-                    <li><a href="#exp" class="nav" target="_parent">Experiências</a></li>
-                    <li><a href="#projetos" class="nav" target="_parent">Projetos</a></li>
-                    <li><a href="#links" class="nav" target="_parent">Links</a></li>
-                    <li><a href="#contato" class="nav" target="_parent">Contato</a></li>
-                </ul>
-                
+                        <li>
+                            <a href="#projetos" class="nav" target="_parent">Projetos</a>
+                        </li>
+
+                        <li>
+                            <a href="#links" class="nav" target="_parent">Links</a>
+                        </li>
+
+                        <li>
+                            <a href="#contato" class="nav" target="_parent">Contato</a>
+                        </li>
+                    </ul>
+
+                </div>
+
             </nav>
-            
-        </header> <!-- FECHAMENTO DO HEADER -->
+        </header>
 
-        <section class="banner"> <!-- ABERTURA BANNER HOME -->
+        <!-- SESSÃO BANNER PRINCIPAL -->
+        <section class="banner">
 
-            <h1 class="txt1-banner">Lucas Scott</h1>
+            <h1 class="title-banner">Lucas Scott</h1>
 
-            <h2 class="txt2-banner">Designer Gráfico e Ilustrador</h2>
+            <h2 class="subtitle-banner">Designer Gráfico e Ilustrador</h2>
 
-            <div class="btn">
+            <div class="btn-banner">
                 <a href="#contato">CONTATE-ME</a>
             </div>
 
-        </section> <!-- FECHAMENTO BANNER HOME -->
+        </section>
 
-        <section class="sobre" id="sobre"> <!-- ABERTURA ABA SOBRE -->
-            
-            <article class="txt-box-sobre">
-            
-                <h2 class="txt-tittle-sobre">Sobre</h2>
-                
-                <p class="txt-sobre">
+        <!-- SESSÃO SOBRE -->
+        <section class="sobre" id="sobre">
 
+            <article class="text-group-sobre">
+
+                <h2 class="title-sobre">Sobre</h2>
+
+                <p class="paragrafo-sobre">
                     Olá! Me chamo Lucas, sou Designer gráfico e Ilustrador. Atualmente moro em Praia Grande, São Paulo.
-
                 </p>
 
-                <p class="txt-sobre">
-
-                    Desde sempre utilizo do Design e a Ilustração para me expressar e me comunicar. Acredito que cada Cor, Forma e principalmente a história por trás da criação são capazes de impactar a vida de outras pessoas de alguma forma.
-
+                <p class="paragrafo-sobre">
+                    Desde sempre utilizo do Design e a Ilustração para me expressar e me comunicar. Acredito que cada
+                    Cor, Forma e principalmente a história por trás da criação são capazes de impactar a vida de outras
+                    pessoas de alguma forma.
                 </p>
 
-                <p class="txt-sobre">
-
-                    Sou fundador da Traço Livre Design, onde comercializo serviços de criação de artes e impressão de materiais gráficos há 7 Anos.
-
+                <p class="paragrafo-sobre">
+                    Sou fundador da Traço Livre Design, onde comercializo serviços de criação de artes e impressão de
+                    materiais gráficos há <span id="ano">7</span> Anos.
                 </p>
 
-                <p class="txt-sobre">
-                
-                    Além dos serviços prestados por meio da Traço Livre, também atuo como freelancer, prestando serviços como Social Media, Designer de Marcas e Designer de Estampas.
-
+                <p class="paragrafo-sobre">
+                    Além dos serviços prestados por meio da Traço Livre, também atuo como freelancer, prestando serviços
+                    como Social Media, Designer de Marcas e Designer de Estampas.
                 </p>
 
             </article>
-            
+
             <img src="./assets/photo.jpg" alt="Photo" class="img-sobre">
 
-        </section> <!-- FECHAMENTO ABA SOBRE -->
+        </section>
 
-        <section class="exp" id="exp"> <!-- ABERTURA ABA EXPERIENCIAS -->
-
+        <!-- SESSÃO DE EXPERIÊNCIAS -->
+        <section class="exp" id="exp">
             <article class="exp-group">
-        
-                <h2 class="txt-tittle-exp">Experiências</h2>
+
+                <h2 class="title-exp">Experiências</h2>
 
                 <div class="job">
 
-                    <p class="sub-tittle-exp">Designer Gráfico e Ilustrador</p>
+                    <p class="cargo">Designer Gráfico e Ilustrador</p>
 
-                    <p class="date-exp">Dez 2016 - Atualmente (6 anos e 7 meses)</p>
+                    <p class="tempo">2016 - Atualmente (6 anos e 7 meses)</p>
 
-                    <p class="empresa-exp">Traço Livre Design</p>
+                    <p class="empresa">Traço Livre Design</p>
 
-                    <p class="txt-exp">
-                        Atuo com desenvolvimento de Identidade visual, Social media, artes para mídia impressa (Cartões de visita, Folders, Tags, Adesivos, Cartazes, etc.)
+                    <p class="atividades">
+                        Atuo com desenvolvimento de Identidade visual, Social media, artes para mídia impressa (Cartões
+                        de visita, Folders, Tags, Adesivos, Cartazes, etc.)
                     </p>
 
                 </div>
 
                 <div class="job">
 
-                    <p class="sub-tittle-exp">Social Media Designer</p>
+                    <p class="cargo">Social Media Designer</p>
 
-                    <p class="date-exp">Mar 2021 - Dez 2021 (9 meses)</p>
+                    <p class="tempo">Mar 2021 - Dez 2021 (9 meses)</p>
 
-                    <p class="empresa-exp">Vila Lelê</p>
+                    <p class="empresa">Vila Lelê</p>
 
-                    <p class="txt-exp">
-                        Trabalhei Social Media Designer na Vila Lelê que é um Loja de roupas infantis, onde desenvolvi artes que era publicadas no instagram da empresa.
+                    <p class="atividades">
+                        Trabalhei Social Media Designer na Vila Lelê que é um Loja de roupas infantis, onde desenvolvi
+                        artes que era publicadas no instagram da empresa.
                     </p>
 
                 </div>
 
                 <div class="job">
 
-                    <p class="sub-tittle-exp">Social Media Designer</p>
+                    <p class="cargo">Social Media Designer</p>
 
-                    <p class="date-exp">Mar 2021 - Dez 2021 (9 meses)</p>
+                    <p class="tempo">Mar 2021 - Dez 2021 (9 meses)</p>
 
-                    <p class="empresa-exp">Oficina do Corpo</p>
+                    <p class="empresa">Oficina do Corpo</p>
 
-                    <p class="txt-exp">
-                        Trabalhei Social Media Designer na Academia Oficina do corpo, onde atuei desenvolvendo artes para o instagram da empresa.
+                    <p class="atividades">
+                        Trabalhei Social Media Designer na Academia Oficina do corpo, onde atuei desenvolvendo artes
+                        para o instagram da empresa.
                     </p>
 
                 </div>
 
             </article>
+        </section>
 
-            
-        </section> <!-- FECHAMENTO ABA EXPERIENCIAS -->
-            
-        <section class="projetos" id="projetos"> <!-- ABERTURA ABA PROJETOS -->
+        <!-- SESSÃO DE PROJETOS -->
+        <section class="projetos" id="projetos">
 
-            <h2 class="tittle-projetos">Projetos</h2>
+            <h2 class="title-projetos">Projetos</h2>
 
             <article class="posts">
 
-                <article class="caixa">
+                <div class="box-projeto">
+                    <div class="informacoes">
+                        <div class="conteudo">
 
-                        <div class="sobreposicao">
-                            
-                            <div class="texto">
+                            <a href="https://www.instagram.com/p/CQlsx2PgZc8/" target="_blank" class="link">
 
-                                <a href="https://www.instagram.com/p/CQlsx2PgZc8/"  target="_blank">
+                                <h3 class="titulo">Mitsuki</h3>
+                                <p class="descricao">
+                                    Fanart do personagem Mitsuki desenvolvido para o instagram.
+                                </p>
 
-                                    <h3>Mitsuki</h3>
-
-                                    <p class="desc">Fanart do personagem Mitsuki desenvolvido para o instagram.</p>
-
-                                </a>
-
-                            </div>
-
+                            </a>
                         </div>
 
-                    <img src="./assets/mitsuki.png">
+                    </div>
 
-                </article>
+                    <img src="./assets/mitsuki.png" class="thumb-projeto">
 
-                <article class="caixa">
+                </div>
 
-                    <div class="sobreposicao">
+                <div class="box-projeto">
+                    <div class="informacoes">
+                        <div class="conteudo">
 
-                        <div class="texto">
+                            <a href="https://www.instagram.com/p/CQgi-6cgo9E/" target="_blank" class="link">
 
-                            <a href="https://www.instagram.com/p/CQgi-6cgo9E/" target="_blank">
+                                <h3 class="titulo">Boruto</h3>
+                                <p class="descricao">Fanart do personagem Boruto desenvolvido para o instagram.</p>
 
-                                <h3>Boruto</h3>
+                            </a>
 
-                                <p class="desc">Fanart do personagem Boruto desenvolvido para o instagram.</p>
+                        </div>
+                    </div>
+
+                    <img src="./assets/boruto.png" class="thumb-projeto">
+
+                </div>
+
+                <div class="box-projeto">
+                    <div class="informacoes">
+                        <div class="conteudo">
+
+                            <a href="https://www.instagram.com/p/CQbTbJcA9gD/" target="_blank" class="link">
+
+                                <h3 class="titulo">Sarada</h3>
+                                <p class="descricao">Fanart da personagem Sarada desenvolvido para o instagram.</p>
 
                             </a>
 
@@ -186,110 +216,83 @@
 
                     </div>
 
-                    <img src="./assets/boruto.png">
+                    <img src="./assets/sarada.png" class="thumb-projeto">
 
-                </article>
-
-                <article class="caixa">
-
-                    <div class="sobreposicao">
-
-                        <div class="texto">
-
-                            <a href="https://www.instagram.com/p/CQbTbJcA9gD/" target="_blank">
-
-                                <h3>Sarada</h3>
-
-                                <p class="desc">Fanart da personagem Sarada desenvolvido para o instagram.</p>
-
-                            </a>
-
-                        </div>
-
-                    </div>
-                    
-                    <img src="./assets/sarada.png">
-
-                </article>
+                </div>
 
             </article>
 
-        </section> <!-- FECHAMENTO ABA PROJETOS -->
+        </section>
 
-        <section class="links" id="links"> <!-- ABERTURA ABA LINKS -->
-
+        <!-- SESSÃO DE LINKS -->
+        <section class="links" id="links">
             <article class="group-links">
 
-                <h2 class="tittle-links">Meus Links</h2>
+                <h2 class="title-links">Meus Links</h2>
 
-                <article class="link-box">
+                <div class="link-box">
                     <a href="https://www.behance.net/Lucasscottart" target="_blank">Behance</a>
-                </article>
+                </div>
 
-                <article class="link-box">
+                <div class="link-box">
                     <a href="https://www.instagram.com/lucasscott.jpg/" target="_blank">Instagram</a>
-                </article>
+                </div>
 
-                <article class="link-box">
+                <div class="link-box">
                     <a href="https://www.linkedin.com/in/bylucasscott/" target="_blank">Linkedin</a>
-                </article>
+                </div>
 
-                <article class="link-box">
+                <div class="link-box">
                     <a href="https://www.instagram.com/guridocoffee/" target="_blank">Ilustrações</a>
-                </article>
+                </div>
 
-                <article class="link-box">
+                <div class="link-box">
                     <a href="https://www.instagram.com/tracolivredg/" target="_blank">Design</a>
-                </article>
+                </div>
 
             </article>
-            
-        </section> <!-- FECHAMENTO ABA LINKS -->
+        </section>
 
-        <section class="contato" id="contato"> <!-- ABERTURA ABA CONTATOS -->
-
+        <!-- SESSÃO DE CONTATO -->
+        <section class="contato" id="contato">
             <form action="https://formsubmit.co/lucasluke307@gmail.com" method="post" class="form">
 
-                <article class="input-group">
+                <div class="input-group">
+                    <h2 class="title-contato">Contato</h2>
 
-                    <h2 class="tittle-contato">Contato</h2>
-    
-                    <article class="input-box">
-                        <label class="titulo-input">Nome <strong>*</strong></label>
-    
+                    <div class="input-box">
+                        <label class="label-input">Nome <strong>*</strong></label>
                         <input type="text" id="nome" placeholder="Ex: Ana Nunes Buran" required>
-                    </article>
+                    </div>
 
-                    <article class="input-box">
-                        <label class="titulo-input">Endereço de E-mail <strong>*</strong></label>
-    
+                    <div class="input-box">
+                        <label class="label-input">Endereço de E-mail <strong>*</strong></label>
                         <input type="email" id="email" placeholder="Ex: Ananunes@email.com" required>
-                    </article>
+                    </div>
 
-                    <article class="input-box">
-                        <label class="titulo-input">Mensagem <strong>*</strong></label>
-    
-                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem aqui . . ." required></textarea>
-                    </article>
+                    <div class="input-box">
+                        <label class="label-input">Mensagem <strong>*</strong></label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem aqui..." required></textarea>
+                    </div>
 
-                    <button type="submit" class="button">Enviar</button>
+                    <button type="submit" class="form-btn">Enviar</button>
 
                     <input type="hidden" name="_subject" value="Nova Mensagem no Site!">
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
 
-                </article>
-
+                </div>
             </form>
+        </section>
 
-        </section> <!-- FECHAMENTO ABA CONTATOS -->
+    </main>
 
-    </main> <!-- FECHAMENTO DO CONTAINER PRINCIPAL -->
+    <!-- SESSÃO FOOTER -->
+    <footer class="footer">
+        Lucas Scott &copy; <span id="ano-atual"> 2023 </span>Todos os direitos reservados.
+    </footer>
 
-    <footer class="footer">Criado por Lucas Scott | 2023 | Todos os direitos reservados.</footer>
-
-    <script src="./scripts/index.js"></script> <!-- INCLUINDO JAVASCRIPT AO DOCUMENTO -->
-
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

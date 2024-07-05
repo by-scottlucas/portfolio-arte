@@ -2,95 +2,81 @@
 @import url('https://fonts.cdnfonts.com/css/bebas-neue');
 @import url('https://fonts.cdnfonts.com/css/mishaland');
 
-
-/* ZERANDO MARGENS E PADINGS DO PROJETO */
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-/* ESTILIZANDO ESTRUTURA HTML */
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
-
-/* ESTILZANDO BODY DO PROJETO */
-
-body{
+body {
     overflow-x: hidden;
     background-color: #212129;
 }
 
-
-/* ESTILIZANDO IMAGENS, IFRAMES, OBJECTS, EMBEDS E VÍDEOS DENTRO DO PROJETO */
-
-img, iframe, object, embed, video{
+img,
+iframe,
+object,
+embed,
+video {
     height: auto;
     max-width: 100%;
 }
 
-
-/* CLASSE PARA ESTILIZAÇÃO DE CONTAINERS */
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
 
-/* ESTILIZANDO HEADER */
+/* ESTILOS HEADER E NAVBAR */
 
-header{
-    position:fixed;
+header {
+    position: fixed;
     align-items: center;
     margin: auto;
     width: 100%;
-    background-color:#181717;
+    background-color: #181717;
     z-index: 9;
 }
 
-.logo{
+.logo {
     padding: 10px;
-    text-align:center;
+    padding-left: 20px;
     font-size: 2rem;
-    font-family: 'Mishaland', sans-serif;
+    color: #ffffff;
     font-weight: 100;
-    color:#ffffff;
-}
-
-.logo a{
-    padding: 10px;
+    text-align: center;
     text-decoration: none;
-    color:#ffffff;
+    font-family: 'Mishaland', sans-serif;
 }
 
-#burguer{
+#menu-burguer {
     display: block;
     color: #f1f0f0;
     padding: 10px;
     cursor: pointer;
+    font-size: 2.2rem;
 }
 
-.sub-nav{
+.nav-brand {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav{
+.navbar {
     display: none;
 }
 
-nav ul{
+.navbar ul {
     list-style-type: none;
 }
 
-nav a{
+.navbar a {
     align-items: end;
     display: block;
     text-align: center;
@@ -101,66 +87,58 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
-    color:#ffe252;
-    font-weight:bold;
+.navbar a:hover {
+    color: #ffe252;
+    font-weight: bold;
 }
 
 
-/* ESTILIZANDO O BANNER DA PÁGINA INICIAL */
+/* ESTILOS BANNER PRINCIPAL */
 
-.banner{
-    font-family: 'Bebas Neue', sans-serif;
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 10px;
+    margin: 0 auto;
     width: 100%;
     height: 100vh;
-    background-color: #212129;
+    font-family: 'Bebas Neue';
 }
 
-.txt1-banner{
+.title-banner {
     margin-top: 70px;
     text-align: center;
     font-size: 5rem;
-    letter-spacing: 1px;
-    font-weight:bold;
+    letter-spacing: 3px;
+    font-weight: bold;
     color: #ffffff;
 }
 
-.txt2-banner{
+.subtitle-banner {
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 1px;
-    color:#ffffff;
-    font-weight:800;
-}
-
-.txt2-banner {
-    overflow: hidden;
-}
- 
-.txt2-banner {
+    color: #FFF;
+    font-weight: 800;
     margin: 0 auto;
-    border-right: 3px #ffffff; /* Linha vertical simulando o cursor de digitação */
-    white-space: nowrap; /* Impede a quebra de linha */
-    overflow: hidden; /* Oculta o texto que ainda não foi digitado */
-    animation: typing 4.5s steps(360, end); /* Nome da animação, duração, efeito de passos */
+    border-right: 3px #FFF;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4.5s steps(360, end);
 }
 
 @keyframes typing {
     from {
-      width: 0%; /* Começa com largura zero (texto oculto) */
+        width: 0%;
     }
+
     to {
-      width: 100%; /* Termina com a largura total (texto completamente digitado) */
+        width: 100%;
     }
 }
 
-.btn a{
+.btn-banner a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,39 +151,30 @@ nav a:hover{
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 2px;
-    width: 140px;
-    height: 40px;
-    border-radius: 7px;
+    width: 200px;
+    height: 44px;
+    border-radius: 2px;
     background-color: #ff000d;
 }
 
-.btn a:hover{
-    background-color:#be000a;
+.btn-banner a:hover {
     box-shadow: #000000 0.6px 0.6px 1px;
 }
 
-/* CLASSES PARA ESTILO DA ABA "SOBRE" */
+/* ESTILOS SESSÃO SOBRE */
 
-.sobre{
+.sobre {
     width: 100%;
-    padding: 10px;
     padding-top: 100px;
-    margin: auto;
-    display:flex;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color:#212129;
+    background-color: #212129;
 }
 
-.txt-tittle-sobre{
-    text-align: center;
-    font-family: Calibri;
-    font-size: 2.6rem;
-    margin-bottom: 2rem;
-}
-
-.txt-box-sobre{
+.text-group-sobre {
     width: 80%;
     color: white;
     text-align: justify;
@@ -215,30 +184,37 @@ nav a:hover{
     margin-bottom: 14px;
 }
 
-.txt-sobre{
+.title-sobre {
+    text-align: center;
+    font-family: Calibri;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.paragrafo-sobre {
     margin-bottom: 30px;
 }
 
-.img-sobre{
+.img-sobre {
     width: 80%;
     margin-bottom: 10px;
 }
 
 
-/* CLASSES PARA ESTILOS DA ABA "EXPERIÊNCIAS" */
+/* ESTILOS DA SESSÃO "EXPERIÊNCIAS" */
 
-.exp{
-    padding: 10px;
-    margin:  0 auto;
+.exp {
     width: 100%;
+    padding: 30px auto;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
     background-color: #212129;
 }
 
-.exp-group{
+.exp-group {
     padding-top: 80px;
     text-align: center;
     width: 86%;
@@ -247,24 +223,30 @@ nav a:hover{
     margin-bottom: 30px;
 }
 
-.txt-tittle-exp{
-    font-family: Calibri;
-    font-size: 2.6rem;
+.job {
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.title-exp {
+    font-size: 2.8rem;
     margin-bottom: 2rem;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue';
 }
 
-.sub-tittle-exp{
-    font-size: 1.5rem;
-    font-weight:800;
+.cargo {
+    font-weight: 800;
     letter-spacing: 1px;
+    font-size: min(1.6rem, 1.8rem);
 }
 
-.date-exp{
+.tempo {
     margin-top: 10px;
-    font-size: 1.1rem;
+    font-size: min(1.2rem, 1.4rem);
 }
 
-.empresa-exp{
+.empresa {
     color: #ffe252;
     font-weight: 600;
     letter-spacing: 1px;
@@ -273,7 +255,7 @@ nav a:hover{
     margin-bottom: 14px;
 }
 
-.txt-exp{
+.atividades {
     font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 40px;
@@ -281,16 +263,15 @@ nav a:hover{
 }
 
 
-/* CLASSES PARA ESTILO DA ABA "PROJETOS" */
+/* ESTILOS DA SESSÃO "PROJETOS" */
 
-.projetos{
-    padding: 10px;
+.projetos {
     margin: 0 auto;
     width: 100%;
-    background-color:#212129;
+    background-color: #212129;
 }
 
-.tittle-projetos{
+.title-projetos {
     padding-top: 50px;
     text-align: center;
     color: #ffffff;
@@ -300,79 +281,78 @@ nav a:hover{
     margin-bottom: 1.4rem;
 }
 
-/* ESTILOS PARA EFEITO CAIXA OCULTA SOB OS POSTS DE PROJETO */
-
-.posts{
-    width: 100%;
+.posts {
+    width: 90%;
     margin: 0 auto;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.caixa {
-    position: relative;
+.box-projeto {
+    width: 48%;
     display: grid;
-    width: 90%;
+    position: relative;
     margin-bottom: 20px;
 }
 
-.caixa img{
+.box-projeto img {
     width: 100%;
     height: auto;
 }
 
-.sobreposicao{
-    position:absolute;
+.informacoes {
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     opacity: 0;
+    position: absolute;
     transition: 0.3s ease;
-    background-color:#000000;
-    }
+    background-color: #000000;
+}
 
-.caixa:hover .sobreposicao {
+.box-projeto:hover .informacoes {
     opacity: 85%;
+    cursor: pointer;
     transition: 0.4s;
 }
 
-/* ESTILO DO TEXTO OCULTO */
-.texto {
-    font-family: Bebas Neue;
+.conteudo {
+    top: 50%;
+    left: 50%;
     color: white;
     font-size: 1.8rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Bebas Neue';
+    transform: translate(-50%, -50%);
 }
 
-.projetos h3{
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.titulo {
     font-family: Bebas Neue;
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
 }
 
-.projetos a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.desc{
+.descricao {
     font-family: Calibri;
     font-size: 1rem;
     text-align: center;
 }
 
 
-/* CLASSES PARA ESTILO DA ABA "LINKS" */
+/* ESTILOS DA DA SESSÃO "LINKS" */
 
-.links{
-    /* padding: 10px; */
+.links {
     width: 100%;
+    height: 90dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,13 +361,13 @@ nav a:hover{
     background-color: #212129;
 }
 
-.group-links{
+.group-links {
     transform: translateY(16%);
     width: 90%;
-    height: 100vh;
+    margin: 0 auto;
 }
 
-.tittle-links{
+.title-links {
     text-align: center;
     color: #ffffff;
     font-family: Calibri;
@@ -395,7 +375,7 @@ nav a:hover{
     margin-bottom: 20px;
 }
 
-.link-box{
+.link-box {
     width: 96%;
     height: 78px;
     margin: 0 auto;
@@ -406,44 +386,45 @@ nav a:hover{
     text-align: center;
     border-radius: 0.2rem;
     cursor: pointer;
-    background-color:#385172;
+    background-color: #385172;
 }
 
-.link-box a{
+.link-box a {
     font-family: calibri;
     font-size: 1.8rem;
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
     align-items: center;
 }
 
-.link-box:hover{
+.link-box:hover {
     background-color: #23354D;
     box-shadow: 0.5px 1.5px 0.5px #181818;
 }
 
-/* CLASSES PARA ESTILO DA ABA "CONTATO" */
+/* ESTILOS DA SESSÃO "CONTATO" */
 
-.contato{
+.contato {
     margin: 0 auto;
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    padding-top: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color: #212129;
 }
 
-.form{
-    text-align: center;
+.form {
+    margin: 0;
     width: 100%;
-    margin-top: 40px;
 }
 
-.tittle-contato{
+.input-group {
+    padding: 40px;
+}
+
+.title-contato {
     text-align: center;
     color: #ffffff;
     font-family: Calibri;
@@ -452,111 +433,109 @@ nav a:hover{
     margin-bottom: 1rem;
 }
 
-.input-box{
+.input-box {
     margin: 0 auto;
-    display: grid;  
+    display: grid;
 }
 
-.input-box input{
+.input-box input {
     text-align: center;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     height: 45px;
-    border-radius: 0.4rem;
-    margin-bottom: 20px;
+    border-radius: 0;
+    margin-bottom: 30px;
     border: none;
-    background-color:#e4e4e4;
+    background-color: #e4e4e4;
 }
 
-.input-box label{
-    text-align: center;
+.input-box label {
+    text-align: start;
     margin-bottom: 10px;
-    color:#ffffff;
-    font-family: Calibri;
-    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Calibri';
+    font-size: .9rem;
 }
 
-.input-box textarea{
+.input-box textarea {
     text-align: center;
     margin: 0 auto;
     resize: none;
-    width: 90%;
+    width: 100%;
     height: 120px;
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 0;
     margin-bottom: 20px;
-    background-color:#e4e4e4;
+    background-color: #e4e4e4;
 }
 
-strong{
+strong {
     font-weight: 100;
     color: #ff000d;
 }
 
-/* ESTILIZANDO BOTAO DE ENVIO DO FORMULARIO */
-
-.button{
-    font-family: Calibri;
-    font-size: 1.4rem;
-    margin-top: 1rem;
-    width: 40%;
-    height: 40px;
+.form-btn {
+    width: 100%;
     border: none;
+    height: 40px;
+    margin-top: 10px;
     font-weight: bold;
-    border-radius: 0.4rem;
-    background-color:#ffffff;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    font-family: 'Calibri';
+    background-color: #FFF;
 }
 
-/* ESTILIZANDO O RODAPÉ */
+/* ESTILOS DA SESSÃO RODAPÉ */
 
-.footer{
+.footer {
     color: #ffffff;
     font-family: calibri light;
     font-size: 1.2rem;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px;
     width: 100%;
-    text-align:center;
+    text-align: center;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#181717;
+    background-color: #181717;
 }
 
 
 /* ********* MEDIA QUERIES ********* */
 
 /* Tablets */
- 
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
 
     /* AJUSTES DO CABEÇALHO */
 
-    .header{
+    .header {
         display: flex;
         justify-content: space-between;
     }
 
-    .logo{
+    .logo {
         padding: 30px;
     }
 
-    #burguer{
+    #burguer {
         display: none;
     }
 
-    .main-nav{
+    .navbar {
         padding: 30px;
         display: block;
     }
 
-    li{
+    li {
         display: inline-block;
         border: 0;
     }
 
-    nav a{
+    nav a {
         padding: 6px;
         font-size: 1.4rem;
         border: 0;
@@ -564,7 +543,7 @@ strong{
 
     /* AJUSTES DA SEÇÃO BANNER */
 
-    section.banner{
+    section.banner {
         margin-top: 0;
         width: 100%;
         height: 100vh;
@@ -578,7 +557,7 @@ strong{
         font-size: 2.5rem;
     }
 
-    .btn a{
+    .btn a {
         font-size: 1.4rem;
         width: 200px;
         height: 50px;
@@ -586,11 +565,11 @@ strong{
 
     /* AJUSTES DA SEÇÃO SOBRE */
 
-    .txt-tittle-sobre{
+    .txt-tittle-sobre {
         font-size: 4rem;
     }
 
-    .txt-box-sobre{
+    .txt-box-sobre {
         font-size: 1.5rem;
         line-height: 40px;
         padding-top: 40px;
@@ -598,7 +577,7 @@ strong{
 
     /* AJUSTES DA SEÇÃO EXPERIENCIAS */
 
-    .txt-tittle-exp{
+    .txt-tittle-exp {
         font-size: 4rem;
     }
 
@@ -606,7 +585,7 @@ strong{
         padding-top: 130px;
     }
 
-    .sub-tittle-exp{
+    .sub-tittle-exp {
         font-size: 2rem;
     }
 
@@ -614,45 +593,45 @@ strong{
         font-size: 1.5rem;
     }
 
-    .empresa-exp{
+    .empresa-exp {
         margin-top: 30px;
         font-size: 1.6rem;
     }
 
-    .txt-exp{
+    .txt-exp {
         font-size: 1.5rem;
         line-height: 40px;
     }
 
     /* AJUSTES DA SEÇÃO PROJETOS */
 
-    .projetos{
+    .projetos {
         display: flex;
         flex-direction: column;
         padding-top: 110px;
     }
 
-    .tittle-projetos{
+    .tittle-projetos {
         font-size: 4rem;
         padding: 0;
     }
 
-    .caixa{
+    .box-projeto {
         width: 80%;
     }
 
     /* AJUSTES DA SEÇÃO DE LINKS */
 
-    .tittle-links{
+    .tittle-links {
         font-size: 4rem;
     }
 
-    .group-links{
+    .group-links {
         margin-top: 20px;
         padding: 10px;
     }
 
-    .link-box{
+    .link-box {
         margin-bottom: 20px;
         height: 110px;
     }
@@ -660,29 +639,29 @@ strong{
 
     /* AJUSTES DA SEÇÃO CONTATO  */
 
-    .form{
+    .form {
         margin-top: 50px;
         margin-bottom: 10px;
     }
 
 
-    .input-box{
+    .input-box {
         margin: 0 auto;
         width: 90%;
         padding: 0;
     }
 
-    .tittle-contato{
+    .tittle-contato {
         font-size: 4rem;
         width: 100%;
         margin-bottom: 50px;
     }
 
-    .input-box label{
+    .input-box label {
         font-size: 1.8rem;
     }
 
-    .input-box input{
+    .input-box input {
         font-size: 1.5rem;
         height: 60px;
         margin-bottom: 50px;
@@ -694,12 +673,12 @@ strong{
 
     }
 
-    .button{
+    .button {
         width: 30%;
         height: 50px;
     }
 
-    .footer{
+    .footer {
         font-size: 1.5rem;
     }
 
@@ -707,75 +686,75 @@ strong{
 
 /* Desktops */
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
 
-    .header{
+    .header {
         height: 12vh;
     }
 
-    .logo{
+    .logo {
         font-size: 2.2rem;
     }
 
-    .nav{
+    .nav {
         font-size: 1.3rem;
         margin-left: 24px;
     }
 
-    .txt1-banner{
+    .txt1-banner {
         text-align: center;
         font-size: 8rem;
         letter-spacing: 4px;
     }
 
-    .txt2-banner{
+    .txt2-banner {
         font-size: 2.4rem;
     }
 
-    .btn a{
+    .btn a {
         width: 160px;
         height: 40px;
         border-radius: 10px;
         font-size: 1.2rem;
     }
 
-    .sobre{
+    .sobre {
         padding: 30px;
         padding-top: 100px;
         display: flex;
         flex-direction: row;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         align-items: center;
         width: 96%;
     }
 
-    .txt-box-sobre{
+    .txt-box-sobre {
         padding: 0px;
         text-align: justify;
         width: 50%;
     }
 
-    .txt-tittle-sobre{
+    .txt-tittle-sobre {
         font-size: 2.8rem;
         text-align: start;
     }
 
-    .txt-sobre{
+    .paragrafo-sobre {
         font-size: 1.25rem;
         margin-bottom: 4px;
     }
 
-    .img-sobre{
+    .img-sobre {
         margin: 0;
         width: 35%;
     }
 
-    .exp{
+    .exp {
         padding: 30px;
         width: 96%;
     }
 
-    .exp-group{
+    .exp-group {
         padding-top: 60px;
         width: 90%;
         align-items: center;
@@ -783,55 +762,55 @@ strong{
         flex-direction: column;
     }
 
-    .txt-tittle-exp{
+    .txt-tittle-exp {
         font-size: 2.8rem;
         margin-bottom: 30px;
     }
 
-    .sub-tittle-exp{
+    .sub-tittle-exp {
         font-size: 2rem;
     }
 
-    .date-exp{
+    .date-exp {
         margin-top: 10px;
         font-size: 1.4rem;
     }
 
-    .empresa-exp{
+    .empresa-exp {
         margin-top: 30px;
         font-size: 1.8rem;
         margin-bottom: 12px;
     }
 
-    .txt-exp{
+    .txt-exp {
         margin: 0 auto;
         width: 84%;
         font-size: 1.4rem;
         margin-bottom: 30px;
     }
 
-    .projetos{
+    .projetos {
         display: flex;
         flex-direction: column;
         padding-top: 60px;
         width: 96%;
     }
 
-    .tittle-projetos{
+    .tittle-projetos {
         font-size: 2.8rem;
     }
 
-    .posts{
+    .posts {
         display: flex;
         flex-direction: row;
     }
 
-    .caixa{
+    .box-projeto {
         width: 36%;
         margin-inline: 10px;
     }
 
-    .links{
+    .links {
         margin-top: 0;
         padding-top: 0;
         padding: 0;
@@ -839,64 +818,64 @@ strong{
         height: 90vh;
     }
 
-    .group-links{
+    .group-links {
         padding-top: 0;
         margin-top: 0;
         width: 80%;
     }
 
-    .tittle-links{
+    .tittle-links {
         margin-top: 0;
         font-size: 2.8rem;
         margin-bottom: 20px;
     }
 
-    .link-box{
+    .link-box {
         margin-top: 0;
         margin-bottom: 10px;
         height: 78px;
     }
 
-    .contato{
+    .contato {
         margin-bottom: 0;
         padding-top: 10px;
         width: 96%;
     }
 
-    .form{
+    .form {
         width: 60%;
     }
 
-    .tittle-contato{
+    .tittle-contato {
         font-size: 2.8rem;
         margin-bottom: 20px;
     }
 
-    .input-box label{
+    .input-box label {
         font-size: 1.3rem;
     }
 
-    .input-box input{
+    .input-box input {
         font-size: 1rem;
         width: 80%;
         height: 40px;
         margin-bottom: 30px;
     }
 
-    .input-box textarea{
+    .input-box textarea {
         font-size: 1.2rem;
         width: 80%;
         height: 100px;
         margin-bottom: 10px;
     }
 
-    .button{
+    .button {
         width: 180px;
         height: 36px;
         margin-bottom: 0;
     }
 
-    .footer{
+    .footer {
         margin-top: 10px;
         width: 100%;
         height: 1vh;

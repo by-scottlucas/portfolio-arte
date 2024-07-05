@@ -733,12 +733,35 @@ strong {
 
 @media screen and (min-width: 1024px) {
 
+    /* SESSÃO HEADER/NAVBAR */
+
     .header {
-        height: 12vh;
+        display: grid;
+        height: 100px;
     }
 
     .logo {
-        font-size: 2.2rem;
+        padding: 0 20px;
+        font-size: 2.4rem;
+    }
+
+    #menu-burguer {
+        display: none;
+    }
+
+    nav {
+        padding: 0 30px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
     }
 
     .nav {
@@ -746,103 +769,119 @@ strong {
         margin-left: 24px;
     }
 
-    .txt1-banner {
+
+    /* SESSÃO BANNER PRINCIPAL */
+
+    .banner {
+        margin-top: 25px;
+    }
+
+    .title-banner {
         text-align: center;
         font-size: 8rem;
         letter-spacing: 4px;
     }
 
-    .txt2-banner {
+    .subtitle-banner {
         font-size: 2.4rem;
     }
 
-    .btn a {
-        width: 160px;
-        height: 40px;
-        border-radius: 10px;
+    .btn-banner a {
+        width: 260px;
+        height: 50px;
+        border-radius: 2px;
         font-size: 1.2rem;
     }
 
+
+    /* SESSÃO SOBRE */
+
     .sobre {
-        padding: 30px;
+        /* padding: 30px; */
         padding-top: 100px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 96%;
+        width: 90%;
     }
 
-    .txt-box-sobre {
+    .text-group-sobre {
         padding: 0px;
         text-align: justify;
-        width: 50%;
+        width: 60%;
+        padding-right: 15px;
     }
 
-    .txt-tittle-sobre {
-        font-size: 2.8rem;
+    .title-sobre {
+        font-size: 4rem;
         text-align: start;
     }
 
     .paragrafo-sobre {
-        font-size: 1.25rem;
-        margin-bottom: 4px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
 
     .img-sobre {
-        margin: 0;
+        margin-top: 110px;
         width: 35%;
     }
 
-    .exp {
-        padding: 30px;
-        width: 96%;
-    }
+
+
+    /* SESSÃO EXPERIÊNCIAS */
+
+    /* .exp {
+        padding-top: 0px;
+    } */
 
     .exp-group {
-        padding-top: 60px;
         width: 90%;
-        align-items: center;
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
 
-    .txt-tittle-exp {
-        font-size: 2.8rem;
+    .title-exp {
+        font-size: 4rem;
         margin-bottom: 30px;
     }
 
-    .sub-tittle-exp {
+    .cargo {
         font-size: 2rem;
     }
 
-    .date-exp {
+    .tempo {
         margin-top: 10px;
         font-size: 1.4rem;
     }
 
-    .empresa-exp {
-        margin-top: 30px;
-        font-size: 1.8rem;
-        margin-bottom: 12px;
+    .empresa {
+        margin-top: 45px;
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 
-    .txt-exp {
+    .atividades {
+        width: 80%;
         margin: 0 auto;
-        width: 84%;
         font-size: 1.4rem;
         margin-bottom: 30px;
     }
 
+
+    /* SESSÃO PROJETOS */
+
     .projetos {
         display: flex;
         flex-direction: column;
-        padding-top: 60px;
-        width: 96%;
+        padding-top: 200px;
+        /* width: 96%; */
     }
 
-    .tittle-projetos {
-        font-size: 2.8rem;
+    .title-projetos {
+        font-size: 4rem;
     }
 
     .posts {
@@ -851,49 +890,45 @@ strong {
     }
 
     .box-projeto {
-        width: 36%;
-        margin-inline: 10px;
+        width: 30%;
     }
 
+
+    /* SESSÃO DE LINKS */
+
     .links {
-        margin-top: 0;
-        padding-top: 0;
-        padding: 0;
-        width: 96%;
-        height: 90vh;
+        margin-top: 60px;
     }
 
     .group-links {
-        padding-top: 0;
-        margin-top: 0;
-        width: 80%;
-    }
-
-    .tittle-links {
-        margin-top: 0;
-        font-size: 2.8rem;
-        margin-bottom: 20px;
-    }
-
-    .link-box {
-        margin-top: 0;
-        margin-bottom: 10px;
-        height: 78px;
-    }
-
-    .contato {
-        margin-bottom: 0;
-        padding-top: 10px;
-        width: 96%;
-    }
-
-    .form {
         width: 60%;
     }
 
-    .tittle-contato {
-        font-size: 2.8rem;
-        margin-bottom: 20px;
+    .title-links {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+
+    .link-box {
+        height: 75px;
+        margin-bottom: 10px;
+    }
+
+
+    /* SESSÃO CONTATO */
+
+    .contato {
+        padding-top: 100px;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .title-contato {
+        font-size: 4rem;
+        margin-bottom: 10px;
     }
 
     .input-box label {
@@ -901,29 +936,33 @@ strong {
     }
 
     .input-box input {
+        height: 45px;
         font-size: 1rem;
-        width: 80%;
-        height: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .input-box textarea {
-        font-size: 1.2rem;
-        width: 80%;
         height: 100px;
+        padding-top: 15px;
+        font-size: 1.2rem;
         margin-bottom: 10px;
     }
 
-    .button {
-        width: 180px;
-        height: 36px;
-        margin-bottom: 0;
+    .form-btn {
+        width: 90%;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 1.4rem;
+        margin-bottom: 80px;
     }
 
+
+    /* SESSÃO FOOTER */
+
     .footer {
-        margin-top: 10px;
         width: 100%;
-        height: 1vh;
+        margin-top: 10px;
+        font-size: 1.4rem;
     }
 
 }

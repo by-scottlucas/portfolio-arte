@@ -76,7 +76,7 @@ header {
     list-style-type: none;
 }
 
-.navbar a {
+.nav {
     align-items: end;
     display: block;
     text-align: center;
@@ -87,7 +87,7 @@ header {
     text-decoration: none;
 }
 
-.navbar a:hover {
+.nav:hover {
     color: #ffe252;
     font-weight: bold;
 }
@@ -527,140 +527,162 @@ strong {
 
 @media screen and (min-width: 768px) {
 
-    /* AJUSTES DO CABEÇALHO */
+    /* SESSÃO HEADER/NAVBAR */
 
-    .header {
+    .logo {
+        padding: 40px;
+        font-size: 2.5rem;
+    }
+
+    .nav-brand {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
 
-    .logo {
-        padding: 30px;
-    }
-
-    #burguer {
-        display: none;
+    #menu-burguer {
+        padding: 40px;
+        font-size: 3rem;
     }
 
     .navbar {
-        padding: 30px;
-        display: block;
+        display: none;
     }
 
     li {
-        display: inline-block;
+        border: 0;
+        font-size: 2rem;
+    }
+
+    .nav {
+        padding: 14px;
+        font-size: 1.6rem;
         border: 0;
     }
 
-    nav a {
-        padding: 6px;
-        font-size: 1.4rem;
-        border: 0;
-    }
 
-    /* AJUSTES DA SEÇÃO BANNER */
+    /* SESSÃO BANNER PRINCIPAL */
 
-    section.banner {
-        margin-top: 0;
+    .banner {
         width: 100%;
         height: 100vh;
     }
 
-    .txt1-banner {
+    .title-banner {
         font-size: 8rem;
     }
 
-    .txt2-banner {
+    .subtitle-banner {
         font-size: 2.5rem;
     }
 
-    .btn a {
-        font-size: 1.4rem;
-        width: 200px;
-        height: 50px;
+    .btn-banner a {
+        width: 260px;
+        height: 65px;
+        font-size: 1.6rem;
+        border-radius: 4px;
     }
 
-    /* AJUSTES DA SEÇÃO SOBRE */
 
-    .txt-tittle-sobre {
+    /* SESSÃO SOBRE */
+
+    .text-group-sobre {
+        padding-top: 140px;
+    }
+
+    .title-sobre {
         font-size: 4rem;
+        margin-bottom: 50px;
     }
 
-    .txt-box-sobre {
-        font-size: 1.5rem;
-        line-height: 40px;
-        padding-top: 40px;
+    .paragrafo-sobre {
+        font-size: 1.8rem;
+        line-height: 45px;
     }
 
-    /* AJUSTES DA SEÇÃO EXPERIENCIAS */
 
-    .txt-tittle-exp {
-        font-size: 4rem;
-    }
+    /* SESSÃO EXPERIENCIAS */
 
     .exp-group {
-        padding-top: 130px;
+        padding-top: 140px;
     }
 
-    .sub-tittle-exp {
-        font-size: 2rem;
+    .title-exp {
+        font-size: 4rem;
+        margin-bottom: 50px;
     }
 
-    .date-exp {
-        font-size: 1.5rem;
+    .cargo {
+        font-size: 2.2rem;
     }
 
-    .empresa-exp {
-        margin-top: 30px;
+    .tempo {
         font-size: 1.6rem;
     }
 
-    .txt-exp {
-        font-size: 1.5rem;
-        line-height: 40px;
+    .empresa {
+        margin-top: 40px;
+        font-size: 2rem;
     }
 
-    /* AJUSTES DA SEÇÃO PROJETOS */
+    .atividades {
+        font-size: 1.8rem;
+        line-height: 45px;
+    }
+
+
+    /* SESSÃO PROJETOS */
 
     .projetos {
-        display: flex;
-        flex-direction: column;
-        padding-top: 110px;
+        padding-top: 170px;
     }
 
-    .tittle-projetos {
+    .title-projetos {
         font-size: 4rem;
-        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: row;
     }
 
     .box-projeto {
-        width: 80%;
+        width: 48%;
     }
 
-    /* AJUSTES DA SEÇÃO DE LINKS */
+    .titulo {
+        font-size: 2.5rem;
+    }
 
-    .tittle-links {
+    .descricao {
+        font-size: 1.5rem;
+    }
+
+
+    /* SESSÃO LINKS */
+
+    .title-links {
         font-size: 4rem;
     }
 
-    .group-links {
-        margin-top: 20px;
-        padding: 10px;
-    }
-
     .link-box {
+        height: 120px;
         margin-bottom: 20px;
-        height: 110px;
+    }
+
+    .link-box a {
+        font-size: 2.2rem;
     }
 
 
-    /* AJUSTES DA SEÇÃO CONTATO  */
+    /* SESSÃO CONTATO  */
 
     .form {
-        margin-top: 50px;
+        text-align: center;
+        margin-top: 120px;
         margin-bottom: 10px;
     }
-
 
     .input-box {
         margin: 0 auto;
@@ -668,9 +690,8 @@ strong {
         padding: 0;
     }
 
-    .tittle-contato {
+    .title-contato {
         font-size: 4rem;
-        width: 100%;
         margin-bottom: 50px;
     }
 
@@ -679,24 +700,31 @@ strong {
     }
 
     .input-box input {
+        height: 80px;
         font-size: 1.5rem;
-        height: 60px;
         margin-bottom: 50px;
     }
 
     .input-box textarea {
-        font-size: 1.5rem;
         height: 200px;
-
+        padding-top: 25px;
+        font-size: 1.6rem;
     }
 
-    .button {
-        width: 30%;
-        height: 50px;
+    .form-btn {
+        width: 90%;
+        height: 80px;
+        margin: 0 auto;
+        font-size: 2rem;
+        margin-top: 20px;
     }
+
+
+    /* SESSÃO FOOTER */
 
     .footer {
-        font-size: 1.5rem;
+        /* padding: 35px 0; */
+        font-size: 2rem;
     }
 
 }

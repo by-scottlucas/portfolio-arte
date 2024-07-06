@@ -161,7 +161,7 @@ header {
     box-shadow: #000000 0.6px 0.6px 1px;
 }
 
-/* ESTILOS SESSÃO SOBRE */
+/* ESTILOS SEÇÃO SOBRE */
 
 .sobre {
     width: 100%;
@@ -202,7 +202,7 @@ header {
 }
 
 
-/* ESTILOS DA SESSÃO "EXPERIÊNCIAS" */
+/* ESTILOS DA SEÇÃO "EXPERIÊNCIAS" */
 
 .exp {
     width: 100%;
@@ -264,7 +264,7 @@ header {
 }
 
 
-/* ESTILOS DA SESSÃO "PROJETOS" */
+/* ESTILOS DA SEÇÃO "PROJETOS" */
 
 .projetos {
     margin: 0 auto;
@@ -355,7 +355,7 @@ header {
 }
 
 
-/* ESTILOS DA DA SESSÃO "LINKS" */
+/* ESTILOS DA DA SEÇÃO "LINKS" */
 
 .links {
     width: 100%;
@@ -411,7 +411,7 @@ header {
     box-shadow: 0.5px 1.5px 0.5px #181818;
 }
 
-/* ESTILOS DA SESSÃO "CONTATO" */
+/* ESTILOS DA SEÇÃO "CONTATO" */
 
 .contato {
     margin: 0 auto;
@@ -499,7 +499,7 @@ strong {
     background-color: #FFF;
 }
 
-/* ESTILOS DA SESSÃO RODAPÉ */
+/* ESTILOS DA SEÇÃO RODAPÉ */
 
 .footer {
     width: 100%;
@@ -527,7 +527,7 @@ strong {
 
 @media screen and (min-width: 768px) {
 
-    /* SESSÃO HEADER/NAVBAR */
+    /* SEÇÃO HEADER/NAVBAR */
 
     .logo {
         padding: 40px;
@@ -561,7 +561,7 @@ strong {
     }
 
 
-    /* SESSÃO BANNER PRINCIPAL */
+    /* SEÇÃO BANNER PRINCIPAL */
 
     .banner {
         width: 100%;
@@ -584,7 +584,7 @@ strong {
     }
 
 
-    /* SESSÃO SOBRE */
+    /* SEÇÃO SOBRE */
 
     .text-group-sobre {
         padding-top: 140px;
@@ -601,7 +601,7 @@ strong {
     }
 
 
-    /* SESSÃO EXPERIENCIAS */
+    /* SEÇÃO EXPERIENCIAS */
 
     .exp-group {
         padding-top: 140px;
@@ -631,7 +631,7 @@ strong {
     }
 
 
-    /* SESSÃO PROJETOS */
+    /* SEÇÃO PROJETOS */
 
     .projetos {
         padding-top: 170px;
@@ -660,7 +660,7 @@ strong {
     }
 
 
-    /* SESSÃO LINKS */
+    /* SEÇÃO LINKS */
 
     .title-links {
         font-size: 4rem;
@@ -676,7 +676,7 @@ strong {
     }
 
 
-    /* SESSÃO CONTATO  */
+    /* SEÇÃO CONTATO  */
 
     .form {
         text-align: center;
@@ -720,7 +720,7 @@ strong {
     }
 
 
-    /* SESSÃO FOOTER */
+    /* SEÇÃO FOOTER */
 
     .footer {
         /* padding: 35px 0; */
@@ -733,7 +733,7 @@ strong {
 
 @media screen and (min-width: 1024px) {
 
-    /* SESSÃO HEADER/NAVBAR */
+    /* SEÇÃO HEADER/NAVBAR */
 
     .header {
         display: grid;
@@ -770,7 +770,7 @@ strong {
     }
 
 
-    /* SESSÃO BANNER PRINCIPAL */
+    /* SEÇÃO BANNER PRINCIPAL */
 
     .banner {
         margin-top: 25px;
@@ -794,7 +794,7 @@ strong {
     }
 
 
-    /* SESSÃO SOBRE */
+    /* SEÇÃO SOBRE */
 
     .sobre {
         /* padding: 30px; */
@@ -830,7 +830,7 @@ strong {
 
 
 
-    /* SESSÃO EXPERIÊNCIAS */
+    /* SEÇÃO EXPERIÊNCIAS */
 
     /* .exp {
         padding-top: 0px;
@@ -871,7 +871,7 @@ strong {
     }
 
 
-    /* SESSÃO PROJETOS */
+    /* SEÇÃO PROJETOS */
 
     .projetos {
         display: flex;
@@ -894,7 +894,7 @@ strong {
     }
 
 
-    /* SESSÃO DE LINKS */
+    /* SEÇÃO DE LINKS */
 
     .links {
         margin-top: 60px;
@@ -915,7 +915,7 @@ strong {
     }
 
 
-    /* SESSÃO CONTATO */
+    /* SEÇÃO CONTATO */
 
     .contato {
         padding-top: 100px;
@@ -957,7 +957,7 @@ strong {
     }
 
 
-    /* SESSÃO FOOTER */
+    /* SEÇÃO FOOTER */
 
     .footer {
         width: 100%;

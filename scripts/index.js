@@ -1,7 +1,6 @@
 /* Resolver bug de menu em telas maiores */
-
 function novaDimensao(){
-    if (innerWidth >= 768){
+    if (innerWidth >= 1024){
         itens.style.display = 'block'
     } else {
         itens.style.display = 'none'
@@ -20,12 +19,11 @@ function clickMenu() {
 
 
 /* Ocultar menu após clicar em uma ancora */
-
 const menuItens = itens.getElementsByTagName('a');
 
 for (let item of menuItens) {
     item.addEventListener('click', () => {
-        if (innerWidth > 768){
+        if (innerWidth >= 1024){
             itens.style.display = 'block';
         } else {
             itens.style.display = 'none';
